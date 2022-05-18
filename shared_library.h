@@ -8,14 +8,14 @@
 
 typedef struct SharedLibrary_s
 {
-	char      mBaseName[MAX_BASE_NAME];
+    char      mBaseName[MAX_BASE_NAME];
 
 #if (__PTR_SIZE__ == 64)
-	long long  mStartAddr;
-	long long  mEndAddr;
+    long long  mStartAddr;
+    long long  mEndAddr;
 #else
-	unsigned int  mStartAddr;
-	unsigned int  mEndAddr;
+    unsigned int  mStartAddr;
+    unsigned int  mEndAddr;
 #endif
 
 }SharedLibrary_t;
